@@ -1,22 +1,25 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-function ListPokemon (){
+function ListPokemon () {
 
     const [resultPokemon, setResultPokemon] = useState([]);
     const [offset, setOffset] = useState(0);
 
     useEffect(() => {
+
         try {
             async function getAllResults() {
                 const retorno = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=10&offset=${offset}`)
                 setResultPokemon(retorno.data.results)
             }
             getAllResults()
-        } catch (error) {
+        } 
+        catch (error) {
             console.log(error)
         }
-    }, [offset])
+    }, 
+    [offset])
 
     return (
         <div>
@@ -24,9 +27,9 @@ function ListPokemon (){
                 Procurar os proximos 10 pokemons
             </button>
             <ul>
-                {resultPokemon.map(item => (
+                {resultPokemon.map(pokemon => (
                     <li>
-                        {item.name}
+                        {pokemon.name}
                     </li>
                 ))}
             </ul>
