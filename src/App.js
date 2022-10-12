@@ -6,7 +6,9 @@ import './App.css';
 
 //import Calculadora from './components/questao02/Calculadora';
 
-import Questao03  from './components/questao03/Questao03';
+//import Questao03  from './components/questao03/Questao03';
+
+import Questao04 from './components/questao04/Questao04'
 
 //Questão01
 /*function App() {
@@ -30,10 +32,19 @@ import Questao03  from './components/questao03/Questao03';
 }*/
 
 //Questão 03
-function App() {
+/*function App() {
   return (
     <div className="App">
       <Questao03 />
+    </div>
+  );
+}*/
+
+//Questão 04
+function App() {
+  return (
+    <div className="App">
+      <Questao04 />
     </div>
   );
 }
