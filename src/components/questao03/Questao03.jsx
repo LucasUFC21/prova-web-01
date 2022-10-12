@@ -9,7 +9,7 @@ function ListPokemon (){
     useEffect(() => {
         try {
             async function getAllResults() {
-                const retorno = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=10&offset=${offset}')
+                const retorno = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=10&offset=${offset}`)
                 setResultPokemon(retorno.data.results)
             }
             getAllResults()
