@@ -5,8 +5,8 @@ const Informacao = (props)=> {
     return (
         <div>
             Nome: {nome}<br />
-            Curso: {sobrenome}<br />
-            Universidade: {curso}<br />
+            Sobrenome: {sobrenome}<br />
+            Curso: {curso}<br />
         </div>
     )
 }

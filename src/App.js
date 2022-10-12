@@ -1,12 +1,15 @@
 import './App.css';
 
+//import Questao01 from './components/questao01/Questao01';
+//import Questao01A from './components/questao01/Questao01A'
+//import Questao01B from './components/questao01/Questao01B'
+
 //import Calculadora from './components/questao02/Calculadora';
-import Questao01 from './components/questao01/Questao01';
-import Questao01A from './components/questao01/Questao01A'
-import Questao01B from './components/questao01/Questao01B'
+
+import Questao03  from './components/questao03/Questao03';
 
 //Questão01
-function App() {
+/*function App() {
   return (
     <div className="App">
       <Questao01>
@@ -15,7 +18,7 @@ function App() {
       </Questao01>
     </div>
   );
-}
+}*/
 
 //Questão 02
 /*function App() {
@@ -25,5 +28,14 @@ function App() {
     </div>
   );
 }*/
+
+//Questão 03
+function App() {
+  return (
+    <div className="App">
+      <Questao03 />
+    </div>
+  );
+}
 
 export default App;
