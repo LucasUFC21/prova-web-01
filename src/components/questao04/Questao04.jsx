@@ -1,5 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 const Questao04 = () => {
 
@@ -32,24 +33,27 @@ const Questao04 = () => {
             }
         })
         return (
-            <ul>
-                <li>
-                    <h3> Pais com a Maior População em Habitantes</h3>
-                    {quantidadePopulacao}
-                </li>
-                <li>
-                    <h3> Nome do País</h3>
-                    {nomepais}
-                </li>
-            </ul>
+            <tr>
+                <td>{nomepais}</td>
+                <td>{quantidadePopulacao}</td>
+            </tr >
         )
     }
 
     return (
         <div>
-            {PaisMaiosPopuloso()}
+            <table className="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Pais da Africa</th>
+                        <th scope="col">Populacao Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {PaisMaiosPopuloso()}
+                </tbody>
+            </table>
         </div>
-
     )
 
 }

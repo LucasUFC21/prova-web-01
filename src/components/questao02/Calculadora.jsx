@@ -39,13 +39,13 @@ const Calculadora = () => {
             </div>
 
             <div>
-            <button className="btn btn-primary" onClick={somar}>+</button>
+            <button className="btn btn-outline-primary" onClick={somar}>+</button>
             <span style={{paddingLeft:20}}/>
-            <button className="btn btn-primary" onClick={subtra}>-</button>
+            <button className="btn btn-outline-danger" onClick={subtra}>-</button>
             <span style={{paddingLeft:20}}/>
-            <button className="btn btn-primary" onClick={multi}>*</button>
+            <button className="btn btn-outline-info" onClick={multi}>*</button>
             <span style={{paddingLeft:20}}/>
-            <button className="btn btn-primary" onClick={dividir}>/</button>            
+            <button className="btn btn-outline-success" onClick={dividir}>/</button>            
             </div>
 
             <label> Resultado: {resul} </label>

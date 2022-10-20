@@ -1,14 +1,17 @@
 import React from "react";
+const Questao01A = () => {
 
-const Informacao = (props)=> {
-    const {nome,sobrenome,curso} = props
+    const nome = "Lucas"
+    const sobrenome = "Martins da Silva"
+    const curso = "Redes de Computadores"
+
     return (
         <div>
-            Nome: {nome}<br />
-            Sobrenome: {sobrenome}<br />
-            Curso: {curso}<br />
+            <h2> Nome: {nome} </h2>
+            <h2> Sobrenome: {sobrenome} </h2>
+            <h2> Curso: {curso} </h2>
         </div>
     )
 }
 
-export default Informacao
+export default Questao01A
